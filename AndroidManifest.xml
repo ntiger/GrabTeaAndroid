@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.eatbang.activity" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="7" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+	<application android:name="com.eatbang.application.EatBangApplication"
+		android:icon="@drawable/icon" android:label="@string/app_name"
+		android:debuggable="true">
+		<activity android:name=".LoginActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".HomeActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name=".RegisterActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".RListActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".RInfoActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".RMapActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".FriendActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="MyPartyMonthActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="MyPartyDayActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="MyPartyListActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".MyShareActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".PartyCreateActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".PartyDateActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="PartyEditTimeActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="PartyCreateTimeActivity"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".PartySumActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".PartyDetailActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".InvitationActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="ParticipatorActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<activity android:name="PartyTabActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="PartyInfoActivity" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+	</application>
+</manifest>

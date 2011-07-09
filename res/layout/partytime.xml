@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:layout_width="wrap_content" android:id="@+id/btnPrev"
+			android:layout_height="wrap_content" android:text="前一天"
+			android:textSize="20sp"></Button>
+		<Button android:layout_width="155dp" android:id="@+id/btnToday"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:text="" android:textSize="20sp">
+		</Button>
+		<Button android:layout_width="wrap_content" android:id="@+id/btnNext"
+			android:layout_gravity="right" android:layout_height="wrap_content"
+			android:text="后一天" android:textSize="20sp"></Button>
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent"
+		android:cacheColorHint="#000000" android:layout_height="0dp"
+		android:layout_weight="1" android:id="@+id/lvTimeSlots">
+	</ListView>
+	<Button android:layout_width="fill_parent" android:id="@+id/btnNextStep"
+		android:layout_height="wrap_content" android:text="下一步"
+		android:textSize="20sp"></Button>
+</LinearLayout>

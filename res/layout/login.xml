@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/login">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:background="@drawable/titleblank"
+			android:src="@drawable/title">
+		</ImageView>
+		<TextView android:text="帐号:" android:id="@+id/tvAccount"
+			android:textSize="20sp" android:textColor="@color/Red"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<EditText android:id="@+id/etAccount" android:text=""
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+		<TextView android:text="密码:" android:id="@+id/tvPassword"
+			android:textSize="20sp" android:textColor="@color/Red"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<EditText android:id="@+id/etPassword" android:text=""
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+		<Button android:layout_gravity="right" android:id="@+id/login"
+			android:layout_marginTop="10px" android:layout_marginRight="20px"
+			android:background="@drawable/loginbutton" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		<LinearLayout android:layout_marginTop="20px"
+			android:gravity="right" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="horizontal">
+			<TextView android:id="@+id/tvNoAccount" android:textSize="20sp"
+				android:textColor="@color/Red" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="还没有帐号？"></TextView>
+			<Button android:layout_gravity="right" android:id="@+id/register"
+				android:layout_marginRight="20px" android:layout_marginTop="20px"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:background="@drawable/registerbutton"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

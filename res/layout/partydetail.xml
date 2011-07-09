@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/White">
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:background="@drawable/mypartytitle"></LinearLayout>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:textSize="13sp"
+		android:background="@color/Grey" android:textColor="@color/Black"
+		android:text="聚会名称" />
+	<TextView android:layout_width="fill_parent"
+		android:textColor="@color/Black" android:layout_height="wrap_content"
+		android:id="@+id/tvPartyName" android:textSize="23sp"></TextView>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:textSize="13sp"
+		android:background="@color/Grey" android:textColor="@color/Black"
+		android:text="聚会标签" />
+	<TextView android:layout_width="fill_parent"
+		android:textColor="@color/Black" android:layout_height="wrap_content"
+		android:id="@+id/tvPartyLoc" android:textSize="23sp"></TextView>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:textSize="13sp"
+		android:background="@color/Grey" android:textColor="@color/Black"
+		android:text="聚会描述" />
+	<TextView android:layout_width="fill_parent"
+		android:textColor="@color/Black" android:layout_height="wrap_content"
+		android:id="@+id/tvPartyDesc" android:textSize="23sp"></TextView>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:textSize="13sp"
+		android:background="@color/Grey" android:textColor="@color/Black"
+		android:text="聚会时间" />
+	<ListView android:id="@+id/partyTime" android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="2"
+		android:cacheColorHint="#00000000">
+	</ListView>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:textSize="13sp"
+		android:background="@color/Grey" android:textColor="@color/Black"
+		android:text="参与者" />
+	<ListView android:id="@+id/participator" android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1"
+		android:cacheColorHint="#00000000">
+	</ListView>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="修改"
+		android:textSize="20sp" android:id="@+id/btnModify"></Button>
+</LinearLayout>

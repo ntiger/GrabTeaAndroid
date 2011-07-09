@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/timeSlot" android:layout_width="fill_parent"
+	android:layout_height="50dp" android:orientation="horizontal"
+	android:background="@color/Grey">
+	<TextView android:id="@+id/tvTimeSlot" android:layout_width="40dp"
+		android:layout_height="50dp" android:textColor="@color/Black"
+		android:textSize="13sp" android:background="@color/White">
+	</TextView>
+</LinearLayout>

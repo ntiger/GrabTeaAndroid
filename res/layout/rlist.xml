@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/White">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="95px" android:background="@drawable/titleblank"
+		android:orientation="horizontal">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/rmapbutton"
+			android:id="@+id/map" android:layout_margin="20px">
+		</Button>
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:src="@drawable/logo">
+		</ImageView>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="47px" android:background="@drawable/rlistbar"
+		android:orientation="horizontal">
+		<ImageView android:layout_height="wrap_content" android:id="@+id/ivSort"
+			android:src="@drawable/rlistsort" android:layout_width="wrap_content"
+			android:layout_centerInParent="true"></ImageView>
+		<Button android:id="@+id/distance" android:layout_width="wrap_content"
+			android:text="距    离" android:textSize="11sp" android:freezesText="true"
+			android:layout_toRightOf="@+id/ivSort" android:layout_height="fill_parent"
+			android:layout_centerInParent="true">
+		</Button>
+		<Button android:id="@+id/classification" android:text="分    类"
+			android:layout_height="fill_parent" android:textSize="11sp"
+			android:layout_width="wrap_content" android:layout_toRightOf="@+id/distance"></Button>
+	</RelativeLayout>
+	<ListView android:id="@+id/lvRlist" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"></ListView>
+</LinearLayout>

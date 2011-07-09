@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/White">
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="0dip"
+		android:layout_weight="1">
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/tvPartyName" android:text="聚会名称：" android:textSize="23sp"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/etPartyName" android:textSize="23sp">
+			</EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/tvPartyBring" android:text="需要携带："
+				android:textSize="23sp"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/etPartyBring" android:textSize="23sp">
+			</EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/tvPartyNotBring" android:text="请勿携带："
+				android:textSize="23sp"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/etPartyNotBring" android:textSize="23sp">
+			</EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/tvPartyInvite" android:text="自邀宾客："
+				android:textSize="23sp"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/etPartyInvite" android:textSize="23sp">
+			</EditText>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/Black" android:layout_height="wrap_content"
+				android:id="@+id/tvPartyDesc" android:text="详细介绍：" android:textSize="23sp"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:gravity="top" android:textColor="@color/Black"
+				android:layout_height="wrap_content" android:id="@+id/etPartyDesc"
+				android:lines="5" android:textSize="23sp">
+			</EditText>
+		</LinearLayout>
+	</LinearLayout>
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="保存"
+		android:textSize="20sp" android:id="@+id/btnUpdate"></Button>
+</LinearLayout>
